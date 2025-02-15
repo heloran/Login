@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="forgotHeader">
+            <h2>New Account</h2>
+            </div>
+            <div class="new-body">
+                <form class="formNewAccount" method="POST" action="/user/signup" onsubmit="signupUser(event)">
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="name" id="name" required>
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Enter your email address" id="email" required>
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Password" id="password" required>
+                    <label>Password Confirmation</label>
+                    <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="passwordconfirmation" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="new-footer">
+                <a href="/">Back to Login</a>
+            </div> 
+    </div>
+    <script>
+      async function signupUser(event) {
+          event.preventDefault();
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const password = document.getElementById('password').value;
+          const passwordConfirm = document.getElementById('passwordConfirm').value;
+          const response = await fetch('/user/signup', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({ name, email, password, passwordConfirm })
+          });
+          const result = await response.json();
+          if (result.status === 'success') {
+              alert(result.message);
+              window.location.href = '/';
+          } else {
+              alert(result.message);
+          }
+      }
+  </script>
+</body>
+</html>

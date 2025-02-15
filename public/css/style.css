@@ -1,0 +1,165 @@
+html{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+.container {
+    width: 40%;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    background-color: springgreen;
+    border-radius: 10px;
+}
+.login-header {
+    width: 100%;
+    text-align: center;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+.login-form input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px;
+}
+.login-form label {
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px;
+}
+.login-form button {
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px;
+    width: 100%;
+}
+.login-body{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.newAccount {
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.forgetPassword{
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.formForgot{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.formForgot input, button{
+    font-size:16px;
+    margin-bottom: 5%;
+    padding: 5px;
+}
+.formForgot label{
+    font-size:16px;
+    margin-bottom: 5%;
+
+}
+.forgotHeader{
+    width: 100%;
+    text-align: center;
+}
+.forgot-footer{
+    margin-bottom: 5%;
+    margin-left: 10%;
+}
+.formNewAccount{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.new-footer{
+    margin-bottom: 5%;
+    margin-left: 10%;
+}
+.new-body{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.formNewAccount input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px;
+}
+.formNewAccount label {
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px;
+}
+.formNewAccount button {
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px;
+    width: 100%;
+}
+.reset-body{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.resetHeader{
+    width: 100%;
+    text-align: center;
+}
+.formReset input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px;
+}
+.formReset label {
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px;
+}
+.formReset button {
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px;
+    width: 100%;
+}
+.formReset{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.reset-footer{
+    margin-bottom: 5%;
+    margin-left: 10%;
+}
